@@ -10,6 +10,18 @@ falls in real time, a proximity sensor array detects when the helmet is removed,
 and a phone-accessible dashboard streams live sensor telemetry with a 3D helmet
 model that mirrors the wearer's head orientation.
 
+## Why it's interesting (engineering highlights)
+- **Concurrent process design**: GPIO ownership is isolated to one process;
+  a second Flask process serves HTTP via a shared state file, avoiding
+  hardware contention. (see Architecture below)
+- **9 sensors over a single I2C bus + GPIO**, fused into one detection loop
+  running at ~3 Hz.
+- **Real-time fall detection** from accelerometer/gyroscope thresholds.
+- **Full-stack**: Python sensor layer → REST API → React/TypeScript SPA with
+  a Three.js 3D viewer, all over LAN.
+
+**Stack:** Python, Flask, React, TypeScript, Vite, Three.js, systemd, Raspberry Pi 5
+
 ---
 
 ## Hardware
