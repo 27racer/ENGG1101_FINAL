@@ -4,6 +4,14 @@ A Raspberry Pi 5-based smart safety helmet with real-time sensor monitoring, fal
 
 ---
 
+## What it does
+A wearable safety system for construction/industrial workers. An IMU detects
+falls in real time, a proximity sensor array detects when the helmet is removed,
+and a phone-accessible dashboard streams live sensor telemetry with a 3D helmet
+model that mirrors the wearer's head orientation.
+
+---
+
 ## Hardware
 
 | Component | Model | GPIO / I2C |
