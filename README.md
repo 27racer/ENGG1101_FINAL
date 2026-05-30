@@ -22,6 +22,12 @@ model that mirrors the wearer's head orientation.
 
 **Stack:** Python, Flask, React, TypeScript, Vite, Three.js, systemd, Raspberry Pi 5
 
+## Screenshots
+![Alt Text]('screenshots/Screenshot 2026-05-30 at 11.51.55 PM.png')
+![Alt Text]('screenshots/Screenshot 2026-05-30 at 11.52.07 PM.png')
+![Alt Text]('screenshots/Screenshot 2026-05-30 at 11.52.14 PM.png')
+
+
 ---
 
 ## Hardware
